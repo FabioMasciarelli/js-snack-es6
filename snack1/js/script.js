@@ -27,7 +27,6 @@ let resultName = null;
 
 array.forEach((element, index) => {
     const {name, weight} = element;
-    //console.log(name,weight);
 
     if(index === 0) {
         result = weight;

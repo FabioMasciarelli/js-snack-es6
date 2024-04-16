@@ -27,12 +27,16 @@ const people = [
 
 let result;
 
+const array =[];
+
 const control = people.forEach((element) => {
     if(element.age >= 18){
-        result += ` ${element.name} ${element.surname} è maggiorenne dunque può guidare,`;
+        result = ` ${element.name} ${element.surname} è maggiorenne dunque può guidare`;
+        array.push(result);
     } else {
-        result += ` ${element.name} ${element.surname} è minorenne dunque non può guidare,`;
+        result = ` ${element.name} ${element.surname} è minorenne dunque non può guidare,`;
+        array.push(result);
     }
 });
 
-console.log(result);
+console.log(array);

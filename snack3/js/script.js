@@ -19,8 +19,19 @@ const automobili = [
 //per ogni autombile andiamo a vedere l'alimentazione
 // in base al tipo di alimentazione andiamo a mettere l'automobile nel suo array specifico
 
-automobili.forEach((element) => {
+const benzina = [];
+const diesel = [];
+const mix = [];
+const result = automobili.forEach((element) => {
+    let alimentazione = element.alimentazione;
+    if(alimentazione === "benzina") {
+        benzina.push(element);
+    } else if (alimentazione === "diesel") {
+        diesel.push(element);
+    } else {
+        mix.push(element);
+    }
 
 });
 
-console.log(automobili);
+console.log(benzina, diesel, mix);

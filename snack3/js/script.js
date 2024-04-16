@@ -16,7 +16,7 @@ const automobili = [
 ];
 
 // prendiamo un'automobile alla volta
-//per ogni autombile andiamo a vedere l'alimentazione
+// per ogni autombile andiamo a vedere l'alimentazione
 // in base al tipo di alimentazione andiamo a mettere l'automobile nel suo array specifico
 
 const benzina = [];
@@ -31,7 +31,6 @@ const result = automobili.forEach((element) => {
     } else {
         mix.push(element);
     }
-
 });
 
 console.log(benzina, diesel, mix);
